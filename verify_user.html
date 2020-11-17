@@ -30,9 +30,6 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <!--<?php $no = 1; //$jumlah = 0;
-                                        foreach($row->result() as $key => $data) { //$jumlah = $jumlah + $data->jumlah_bb; 
-                                        ?>-->
                                         <tr>
                                             <td><?=$no++?>.</td>
                                             <td><?=$data->id_customer?></td>
@@ -40,21 +37,17 @@
                                             <td><?=$data->email?></td>
                                             <td><?=$data->no_ktp?></td>
                                             <td class="text-center" width="160px">
-                                                <a href="<?=site_url('bhnbaku/edit/'.$data->bb_id)?>" class="btn btn-primary btn-xs">
+                                                <a href="" class="btn btn-primary btn-xs">
                                                     <i class="fa fa-pencil"></i> VERIFY
                                                 </a>
-                                                <a href="<?=site_url('bhnbaku/del/'.$data->bb_id)?>" onclick="return confirm('Yakin hapus data?')" class="btn btn-danger btn-xs">
+                                                <a href="" onclick="return confirm('Yakin hapus data?')" class="btn btn-danger btn-xs">
                                                     <i class="fa fa-trash"></i> REJECT
                                                 </button>
                                             </td>
                                         </tr>
                                         <?php
                                         } ?>
-                                        <!--<tr>
-                                            <td colspan="8" align="center">
-                                                <b>Total : <?= number_format($jumlah).' Kg'; ?></b>
-                                            </td>
-                                        </tr>-->
+                                        
                                     </tbody>
                                 </table>
                             </div>
